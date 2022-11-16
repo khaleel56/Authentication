@@ -1,0 +1,3 @@
+to create token
+require('crypto').randomBytes(64).toString('hex')
+

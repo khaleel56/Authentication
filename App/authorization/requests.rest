@@ -1,0 +1,26 @@
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2hhbGVlbCIsImlhdCI6MTY2ODU4NDE2MywiZXhwIjoxNjY4NTg0MTkzfQ.C9GR5DXvCfY2mfLIsWdCPtewqZ-FTv_5hME5T3QR5Ow
+
+###
+POST http://localhost:6000/login
+Content-Type: application/json
+ 
+{
+    "username":"khaleel"
+}
+
+###
+POST http://localhost:6000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2hhbGVlbCIsImlhdCI6MTY2ODU4NDExNH0.wtpOyCVXGpNgiacBM50fB4H1CUmi0zbHIlyZqYeoSoE"
+    }
+
+###
+DELETE http://localhost:6000/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2hhbGVlbCIsImlhdCI6MTY2ODU4NDE2MywiZXhwIjoxNjY4NTg0MTkzfQ.C9GR5DXvCfY2mfLIsWdCPtewqZ-FTv_5hME5T3QR5Ow"
+}
